@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #06bbbb
+}
+
+.logo {
+    width: 240px;
+    height: 64px;
+}
+
+header a {
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.mais {
+    color: #8c0a8c;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-left: -5px;
+}
+
+header .navigation ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .navigation li {
+    list-style: none;
+}
+
+header .navigation li a {
+    color: rgb(252, 252, 252);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation ul li .btn-doe {
+    border: 2px solid rgb(152, 4, 152);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 40px;
+    background: linear-gradient(to right, rgb(152, 4, 152) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.navigation li .menu-item:hover {
+    color: #ea08d0;
+    transform: translateY(-10px);
+}
+
+.navigation li .btn-doe:hover {
+    background-position: left bottom;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 60px;
+}
+
+.container .text {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .text h2 {
+    color: rgb(152, 4, 152);
+    font-size: 3em;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+    font-weight: 500;
+    bottom: 4;
+}
+
+
+.container .text h2 span {
+    font-size: 2em;
+    color: #ff6900;
+}
+
+.container .text p {
+    color: rgb(152, 4, 152);
+    width: 400px;
+}
+
+
+.container .text a:hover {
+    transform: translateY(-10px);
+}
+
+.icons {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.icons li {
+    list-style: none;
+}
+
+.icons li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(9, 93, 248);
+    margin-right: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.icons li .instagram {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(152, 4, 152);
+    margin-right: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.icons li a:hover {
+    background: rgb(243, 240, 243);
+    transform: translateY(-10px);
+
+}
+
+.icons li a img {
+    transform: scale(0.5);
+    filter: invert(1);
+}
