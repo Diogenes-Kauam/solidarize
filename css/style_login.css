@@ -1,125 +1,139 @@
-<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;800&display=swap');
 
-    * {
+body{
     margin: 0;
-    padding: 0;
-    }
-    
-    body {
-    background-image: url('https://raw.githubusercontent.com/Diogenes-Kauam/solidarize/main/img/background_login.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Copperplate';  
-    }
+    font-family: 'Noto Sans', sans-serif;   
+}
 
-    .container{
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #B9E1EB;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 100px;
-    }
+    align-items: center;
+}
 
-    .card{
-    background-color: #000000a4;
-    padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #18005a
-    }
-
-    h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #d600d6
-    }
-
-    .label-float input{
-    color: #ffffff;
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 1px solid #EDB541;   
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
-    }
-
-    .label-float{
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    }
-
-    .label-float input:focus{
-    border-bottom: 2px solid #99D4E3;
-    }
-
-    .label-float label{
-    color: #EDB541;
-    pointer-event: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all .3s ease-out;
-    }
-
-    .label-float input:focus + label{
-    font-size: 13px;
-    margin-top: 0;
-    color: #99D4E3
-    }
-
-    button {
-    background-color: transparent;
-    border-color: #000;
-    color: #ffffff;
-    padding: 7px;
-    font-weight: bold;  
-    font-size: 12pt;
-    margin-top: 4px;
-    border-radius: 6px;
-    cursor: pointer;
-    outline: none;
-    transition: all .4s ease-out;
-    }
-
-    button:hover{
-    background-color: #979797df;
-    color: #fff;
-    }
-
-    .justify-cente{
+.left-login{
+    width: 50vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
-    }
+    align-items: center;
+    flex-direction: column;
+}
 
-    hr{
-    margin-top: 10%;
-    margin-bottom: 10%;
+.left-login > h1{
+    color: #8e2dbb;
+    font-size: 3vw;
+}
+
+.left-login-imagem{
+    width: 35vw;
+}
+
+.rigth-login {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
     width: 60%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #8bcada;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
 
-    p{
-    color:rgb(255, 255, 255);
-    font-size: 14pt;
-    text-align: center;
-    }
+.card-login > h1{
+    color: #2400b3;
+    font-weight: 800;
+    margin: 0;
+}
 
-    a{
-    color: #ff0000;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-out;
-    }
+.textfild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
 
-    a:hover{
-    color: #00ff40
+.textfild > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px ;
+    padding: 15px;
+    background: #4c6b72;
+    color: azure;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfild > label{
+    color: #ff6a00e6;
+    font-weight: 600;   
+}
+
+.textfild > input::placeholder{
+    color: #c18256;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #EEE50B;
+    background: #7200A8;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #ab00fa6b;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
     }
-    
-</style>
+}
+
+ @media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-imagem{
+        width: 50vh;
+    }
+    .card-login{
+        width: 90%;
+    }
+ }
