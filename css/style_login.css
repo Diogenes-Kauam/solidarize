@@ -96,12 +96,11 @@ body * {
 .link{
     width: 100%;
     border: none;
-    margin: 0px;
+    margin: 25px;
 }
 
 .btn-login{
     width: 100%;
-    margin: 0;
     padding: 16px 0px;
     border: none;
     border-radius: 8px;
