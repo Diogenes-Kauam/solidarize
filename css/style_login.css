@@ -96,8 +96,7 @@ body * {
 .link{
     width: 100%;
     border: none;
-    margin: 25px;
-    outline: none;
+    margin: 0px;
 }
 
 .btn-login{
