@@ -101,6 +101,7 @@ body * {
 
 .btn-login{
     width: 100%;
+    margin: 25px;
     padding: 16px 0px;
     border: none;
     border-radius: 8px;
