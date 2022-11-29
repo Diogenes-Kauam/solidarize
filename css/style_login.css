@@ -96,12 +96,13 @@ body * {
 .link{
     width: 100%;
     border: none;
-    margin: 25px;
+    margin-top: 25px;
+    outline: none;
 }
 
 .btn-login{
     width: 100%;
-    margin: 25px;
+    margin: 0;
     padding: 16px 0px;
     border: none;
     border-radius: 8px;
@@ -143,9 +144,5 @@ body * {
     }
     .card-login{
         width: 90%;
-    }
-    .login{
-        width: 100%;
-        height: auto;
     }
  }
